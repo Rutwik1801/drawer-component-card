@@ -1,0 +1,245 @@
+@media only screen and (max-width: 114rem) {
+  .popup {
+    position: absolute;
+    border-radius: 0.8rem;
+    top: 53%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+  .popup ul {
+    justify-content: center;
+    padding: 1.5rem 3.5rem;
+  }
+
+  .popup ul li {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .main-text {
+    padding: 1.5rem;
+  }
+
+  .main-text p {
+    padding-bottom: 1.5rem;
+  }
+
+  a ion-icon {
+    top: 59%;
+    left: 69%;
+    z-index: 1;
+  }
+
+  a ion-icon:hover,
+  a ion-icon:active {
+    color: hsl(217, 19%, 35%);
+  }
+}
+
+@media only screen and (max-width: 55rem) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+  }
+
+  .main-text {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+  .main-text h2 {
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .main-text p {
+    letter-spacing: 1.8rem;
+    word-spacing: 0.75rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-text-person figure {
+    width: 100%;
+  }
+
+  .triangle {
+    display: none;
+  }
+
+  .popup {
+    border-radius: 0 0 0.8rem 0.8rem;
+    width: 90%;
+    top: 87%;
+    left: 50%;
+  }
+
+  .popup ul {
+    justify-content: flex-start;
+    padding: 3.8rem 3.5rem;
+  }
+
+  .popup ul li {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  a ion-icon {
+    top: 84%;
+    left: 78%;
+    z-index: 2;
+  }
+
+  a ion-icon:hover,
+  a ion-icon:active {
+    color: hsl(214, 17%, 51%);
+  }
+}
+
+html {
+  font-size: 62.5%;
+  max-width: 114rem;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  background-color: hsl(210, 46%, 95%);
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.main-img {
+  background-image: url(./images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 32rem;
+  width: 100%;
+}
+
+.main-text {
+  margin: 3rem;
+}
+
+.main-text h2 {
+  font-size: 2rem;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 1rem;
+}
+
+.main-text p {
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.main-text-person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text-person figure {
+  display: flex;
+  align-items: center;
+}
+
+.main-text-person figure img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.main-text-person figure figcaption {
+  letter-spacing: 0.1rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.main-text-person figure figcaption strong {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+a ion-icon {
+  position: absolute;
+  text-decoration: none;
+  color: hsl(212, 23%, 69%);
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.2s;
+}
+
+.popup {
+  z-index: 1;
+  background-color: hsl(217, 19%, 35%);
+  display: inline-block;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.triangle {
+  height: 2rem;
+  width: 2rem;
+  color: hsl(217, 19%, 35%);
+  position: absolute;
+  top: 55.83%;
+  left: 69.5%;
+  transform: rotate(60deg);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.popup ul {
+  display: flex;
+  align-items: center;
+}
+
+.popup ul li {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.6rem;
+  list-style: none;
+  color: white;
+}
+
+.popup ul li ion-icon {
+  height: 2rem;
+  width: 2em;
+  margin-top: 0.1rem;
+}
+
+.popup ul li:hover {
+  color: hsl(212, 23%, 69%);
+}
+
+.display {
+  opacity: 1;
+}
